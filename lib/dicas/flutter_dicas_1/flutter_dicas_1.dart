@@ -5,8 +5,17 @@ class FlutterDicas1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const SizedBox(),
+    return Column(
+      children: [
+        const SizedBox(width: 10, height: 10),
+        const ColoredBox(color: Colors.white, child: Text('Flutter Dicas')),
+        Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: const Text('Flutter Dicas')),
+      ],
     );
   }
 }
