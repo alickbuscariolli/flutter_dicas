@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdicas/dicas/flutter_dicas_13/flutter_dicas_13.dart';
+import 'package:flutterdicas/tips/flutter_tips_2/flutter_tips_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             secondaryContainer: Colors.black,
             surface: Colors.blue,
           )),
-      home: const FlutterDicas13(),
+      home: const FlutterTips2(),
     );
   }
 }
