@@ -17,25 +17,40 @@ class _FlutterDicas2State extends State<FlutterDicas2> {
       appBar: AppBar(
         title: const Text('Flutter Dicas'),
       ),
-      body: Row(
-        children: _flutterDicas2
-            .map(
-              (btnText) => Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                    left: 4.0,
-                    right: 4.0,
-                  ),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      btnText,
-                    ),
-                  ),
-                ),
-              ),
-            )
-            .toList(),
+      body: ListView.builder(
+        itemCount: _flutterDicas2.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (_, int index) => Align(
+          alignment: Alignment.topLeft,
+          child: ChildWidget(
+            btnText: _flutterDicas2[index],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ChildWidget extends StatelessWidget {
+  final String btnText;
+
+  const ChildWidget({
+    required this.btnText,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 4.0,
+        right: 4.0,
+      ),
+      child: ElevatedButton(
+        onPressed: () {},
+        child: Text(
+          btnText,
+        ),
       ),
     );
   }
