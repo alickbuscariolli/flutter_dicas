@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdicas/dicas/flutter_dicas_15/flutter_dicas_15.dart';
 import 'package:flutterdicas/dicas/flutter_dicas_2/flutter_dicas_2.dart';
 import 'package:flutterdicas/tips/flutter_tips_2/flutter_tips_2.dart';
 import 'package:flutterdicas/tips/flutter_tips_3/flutter_tips_3.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
           surface: Colors.blue,
         ),
       ),
-      home: const FlutterTips6(),
+      home: const FlutterDicas14(),
     );
   }
 }
