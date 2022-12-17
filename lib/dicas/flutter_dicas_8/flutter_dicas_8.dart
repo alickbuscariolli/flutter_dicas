@@ -8,7 +8,6 @@ class FlutterDicas8 extends StatefulWidget {
 }
 
 class _FlutterDicas8State extends State<FlutterDicas8> {
-  bool switchValue = false;
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -19,7 +18,7 @@ class _FlutterDicas8State extends State<FlutterDicas8> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter Dicas - 8'),
+          title: Text('Flutter Dicas - 8'),
         ),
         body: Form(
           key: _formKey,

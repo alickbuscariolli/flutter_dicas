@@ -1,13 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdicas/dicas/flutter_dicas_15/flutter_dicas_15.dart';
-import 'package:flutterdicas/dicas/flutter_dicas_2/flutter_dicas_2.dart';
-import 'package:flutterdicas/tips/flutter_tips_2/flutter_tips_2.dart';
-import 'package:flutterdicas/tips/flutter_tips_3/flutter_tips_3.dart';
-import 'package:flutterdicas/tips/flutter_tips_4/flutter_tips_4.dart';
-import 'package:flutterdicas/tips/flutter_tips_5/flutter_tips_5.dart';
-import 'package:flutterdicas/tips/flutter_tips_6/flutter_dicas_6.dart';
-
-import 'dicas/flutter_dicas_3/flutter_dicas_3.dart';
+import 'package:flutterdicas/dicas/flutter_dicas_20/flutter_dicas_20.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +31,7 @@ class MyApp extends StatelessWidget {
           surface: Colors.blue,
         ),
       ),
-      home: const FlutterDicas14(),
+      home: const FlutterDicas20(),
     );
   }
 }
