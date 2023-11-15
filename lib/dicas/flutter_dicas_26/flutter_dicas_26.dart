@@ -27,9 +27,9 @@ class Box<T> {
 }
 
 void main() {
-  Box<int> intBox = Box<int>(42);
-  Box<String> stringBox = Box<String>('Hello');
+  Box<int> intBox = Box<int>(31);
+  Box<String> stringBox = Box<String>('Olá');
 
-  print(intBox.value); // Output: 42
-  print(stringBox.value); // Output: Hello
+  print(intBox.value); // Saída: 31
+  print(stringBox.value); // Saída: Olá
 }
